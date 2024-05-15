@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --main-color: #f6f5f5;
+  --secondary-color: #0c359e;
+  --accent-color: #ffe3ca;
+  --accent-color-secondary: #ee99c2;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
+.ind {
+  color: rgb(156, 35, 55);
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+/* @todo Perbaiki position absolute */
+nav {
+  display: flex;
+  position: absolute;
+  padding-right: 7.5rem;
+  z-index: 5;
+  top: 4rem;
+  right: 0;
+  background-color: var(--secondary-color);
+  border-radius: 3rem 8px 8px 3rem;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0.8rem 1.6rem;
+}
+
+nav ul a {
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  color: black;
+  padding: 1rem 2rem;
+  color: var(--main-color);
+}
+
+.home,
+.about,
+.contact {
+  min-height: 100vh;
+}
+
+.home {
+  padding: 1rem 7rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.home img {
+  filter: brightness(80%);
+  width: 40%;
+  filter: drop-shadow(0 0 8px rgba(1, 6, 29, 0.336));
+}
+
+.home > section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(27, 130, 189);
+  margin-bottom: .5rem;
+}
+
+.content h1 {
+  color: #0c193b;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.content p {
+  line-height: 1.5rem;
+}
+
+.desc > a {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border-radius: 2rem;
+  padding: 1.5rem 3rem;
+  width: fit-content;
+  transition: all 0.2s ease-in-out;
+}
+
+.desc > a:hover {
+  background-color: #2554ca;
+}
